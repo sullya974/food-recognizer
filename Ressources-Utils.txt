@@ -1,0 +1,42 @@
+GENRAL ====================
+
+
+> !!! Tuto - YOLO object detection with OpenCV
+	https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/
+
+> !!! Food Classification with Deep Learning in Keras / Tensorflow
+	https://www.youtube.com/watch?v=7AayErmvgmE
+
+> !!!!! How To Easily Classify Food Using Deep Learning and Tensorflow
+https://nanonets.com/blog/multi-label-classification-using-deep-learning/
+
+
+> Application of Deep Learning in Food: A Review
+	Zhou_et_al-2019-Comprehensive_Reviews_in_Food_Science_and_Food_Safety.pdf
+	https://onlinelibrary.wiley.com/doi/full/10.1111/1541-4337.12492
+
+> A Beginner's Guide to Convolutional Neural Networks (CNNs)
+https://pathmind.com/wiki/convolutional-network
+
+> Paper study Food/Non-Food images recogni. with CNNs
+https://www.researchgate.net/profile/Kiyoharu_Aizawa/publication/283009206_Highly_Accurate_FoodNon-Food_Image_Classification_Based_on_a_Deep_Convolutional_Neural_Network/links/575adea208aed884620d9430/Highly-Accurate-Food-Non-Food-Image-Classification-Based-on-a-Deep-Convolutional-Neural-Network.pdf
+
+
+> Food-101 – Mining Discriminative Componentswith Random Forests
+https://www.vision.ee.ethz.ch/datasets_extra/food-101/static/bossard_eccv14_food-101.pdf
+
+
+> Food-101 – Mining Discriminative Components with Random Forests
+https://www.researchgate.net/publication/300358519_Food-101_-_Mining_Discriminative_Components_with_Random_Forests
+
+
+
+FRAMEWORK ==================================
+> caffe : Deep Learning Framework
+https://caffe.berkeleyvision.org/
+
+
+
+DATASET ====================================
+> Kaggle dataset : caltech256
+https://www.kaggle.com/jessicali9530/caltech256
