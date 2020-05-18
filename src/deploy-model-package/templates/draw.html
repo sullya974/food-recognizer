@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Prediction</title>
+</head>
+
+<body style="text-align:center;">
+    <div style="text-align:center;">
+        <div style="font-weight:bold;font-size:22px;margin:20px;">
+            {{ food_pred }}
+        </div>
+        <div>
+            <img src="{{ food_image }}" alt="Food Image" style="width:280px;height:280px">
+        </div>
+        <div>
+            <input type="button" id="btnPredict" value="Random Predict" onclick="location.href='../predict'">
+        </div>
+    </div>
+    <form action="../uploader/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Predict"/>
+    </form>
+</body>
+
+</html>

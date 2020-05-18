@@ -1,1 +1,5 @@
 /datasets/*
+/temp/*
+/resources-utils/*
+src/deploy-model-package/model/best_model_58class_all.hdf5
+src/best_model_58class_all.hdf5

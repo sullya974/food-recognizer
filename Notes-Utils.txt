@@ -1,1 +1,0 @@
-==> Convolutional Neural Network as Feature extractor and classifier

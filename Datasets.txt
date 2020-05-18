@@ -1,8 +1,0 @@
-Databases	URL of databases	Top‐1% & Top‐5%a	Network	Reference
-Food‐101 (Bossard et al., 2014)	http://www.vision.ee.ethz.ch/datasets/food-101/.	90.27, 98.71	WISeR	Martinel et al. (2018)
-UECFood‐256 (Kawano & Yanai, 2015)	http://foodcam.mobi/dataset/	83.15, 95.45	WISeR	Martinel et al. (2018)
-UECFood‐100 (Matsuda et al., 2012)	http://foodcam.mobi/dataset/	89.58, 99.23	WISeR	Martinel et al. (2018)
-Food‐50 (Joutou & Yanai, 2009)	*not mentioned in the original paper	93.84, 99.44	ResNet‐50	Ciocca et al. (2018)
-Food‐524 (Ciocca et al., 2017)	http://www.ivl.disco.unimib.it/activities/food524db/	81.34, 95.45	ResNet‐50	Ciocca et al. (2017)
-Food‐475 (Ciocca et al., 2018)	http://www.ivl.disco.unimib.it/activities/food475db/	81.59, 95.50	ResNet‐50	Ciocca et al. (2018)
-VIREO Food172 (Chen & Ngo, 2016)	http://vireo.cs.cityu.edu.hk/VireoFood172/	85.86, 97.32	ResNet‐50	Ciocca et al. (2018)

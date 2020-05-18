@@ -1,0 +1,9 @@
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/almonds/0ef5f1b36a.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/almonds/1ae8fe9a10.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/almonds/9db2506043.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/asparagus/1caaf75bb8.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/asparagus/2edb9e5e37.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/asparagus/371dc85c06.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/avocado/0a920ce8e9.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/avocado/1a29462821.jpg
+/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/images-mini/train-mini/avocado/3c7e88e419.jpg

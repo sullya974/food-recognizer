@@ -1,0 +1,5 @@
+classes= 58
+train  = /content/gdrive/My\ Drive/MyCraftsManShip/Data\ Science/Portfolio_data/Projet-Food-Reconizer/darknet/train.txt  
+valid  = /content/gdrive/My\ Drive/MyCraftsManShip/Data\ Science/Portfolio_data/Projet-Food-Reconizer/darknet/test.txt  
+names = /content/gdrive/My\ Drive/MyCraftsManShip/Data\ Science/Portfolio_data/Projet-Food-Reconizer/darknet/food58.names  
+backup = /content/gdrive/My\ Drive/MyCraftsManShip/Data\ Science/Portfolio_data/Projet-Food-Reconizer/darknet/weights/backup

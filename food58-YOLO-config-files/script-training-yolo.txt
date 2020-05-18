@@ -1,0 +1,2 @@
+!./darknet detector train "/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/food58.data" "/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/yolo-food58.cfg" "/content/gdrive/My Drive/Portfolio_data/Projet-Food-Reconizer/darknet/darknet19_448.conv.23" -dont_show 
+./darknet detector train data/food100/food100.data data/food100/yolov2-food100.cfg data/darknet19_448.conv.23
