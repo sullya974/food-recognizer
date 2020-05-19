@@ -3,23 +3,25 @@
 
 <head>
     <title>Food Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body style="text-align:center;">
-    <div style="text-align:center;">
-        <div style="font-weight:bold;font-size:22px;margin:20px;">
-            {{ food_pred }}
+    <div style="text-align:center;margin:5px;">
+        <div style="font-weight:bold;font-size:22px;margin:20px;margin:5px;">
+            <h1 class="text-primary">{{ food_pred }}</h1>
         </div>
         <div>
-            <img src="{{ food_image }}" alt="Food Image" style="width:280px;height:280px">
+            <img src="{{ food_image }}" alt="{{ food_pred }}" class="rounded mx-auto d-block" style="width:768px;height:400px;">
         </div>
-        <div>
-            <input type="button" id="btnPredict" value="Random Predict" onclick="location.href='../predict'">
+        <div style="margin:5px;">
+            <input type="button" id="btnPredict" value="Random Predict" onclick="location.href='../predict'" class="btn btn-primary btn-lg">
         </div>
     </div>
-    <form action="../uploader/" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit" value="Predict"/>
+    <form action="../predict/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"  class="btn btn-primary btn-lg"/>
+        <input type="submit" value="Predict" class="btn btn-primary btn-lg"/>
     </form>
 </body>
 
