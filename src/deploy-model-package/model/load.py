@@ -1,73 +1,19 @@
-# The loader function
-from tensorflow.python.keras.backend import set_session
-from tensorflow.python.keras.models import load_model
-from tensorflow.keras.models import model_from_json
-# import tensorflow as tf
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
-import os
+# from tensorflow.python.keras.models import load_model
 from tensorflow.keras.models import load_model
+import tensorflow.keras.backend as K
 
-tf.keras.backend.clear_session()
+def init(path_trained_model):
+  K.clear_session()
+  model = load_model(path_trained_model, compile=False)
 
-def init():
-  sess = tf.Session()
-  graph = tf.get_default_graph()
+  return model
 
-  MNIST_model_json_file_path = os.path.join("model", "MNIST_model.json")
-  MNIST_model_h5_file_path = os.path.join("model", "MNIST_model.h5")
-  global loaded_model_json
-  with open(MNIST_model_json_file_path, "r") as json_file:
-      loaded_model_json = json_file.read()
-
-  # IMPORTANT: models have to be loaded AFTER SETTING THE SESSION for keras! 
-  # Otherwise, their weights will be unavailable in the threads after the session there has been set
-  set_session(sess)
+def init_food_classes():
+  return ['green_beans', 'chicken_wings', 'zucchini', 'peanuts', 'beef_carpaccio', 'broccoli', 'brussels_sprouts', 
+  'peking_duck', 'caprese_salad', 'omelette', 'strawberries', 'high_fat_sauce', 'kale', 'baby_back_ribs', 'pork_chop', 
+  'mussels', 'walnuts', 'cherries', 'scallops', 'oysters', 'plum', 'fish', 'beef_tartare', 'pecan_nuts', 'octopus', 
+  'seafood', 'squid', 'butter', 'caesar_salad', 'seaweed_salad', 'blackberries', 'clementine', 'cauliflower', 'cabbage', 
+  'avocado', 'pulled_pork', 'raspberries', 'prime_rib', 'greek_salad', 'blueberries', 'beet_salad', 'peach', 'cantaloupe', 
+  'oil', 'eggs', 'asparagus', 'clams', 'cheese', 'kiwi', 'filet_mignon', 'steak', 'almonds', 'brazil_nuts', 'guacamole', 
+  'chicken_curry', 'spinach', 'macadamia', 'hazel_nuts']
   
-  # use Keras model_from_json to make a loaded model
-  global loaded_model
-  loaded_model = model_from_json(loaded_model_json)
-  # load weights into new model
-  
-  loaded_model.load_weights(MNIST_model_h5_file_path)
-  print("Loaded Model from disk")
-  
-  # compile and evaluate loaded model
-  loaded_model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-
-  # global graph
-  # graph = tf.compat.v1.get_default_graph()
-  # graph = tf.get_default_graph()
-
-  return loaded_model, graph
-
-def init_model_loading():
-  # Load the best save model to make predictions
-  tf.keras.backend.clear_session()
-  sess = tf.Session()
-  graph = tf.get_default_graph()
-
-  # IMPORTANT: models have to be loaded AFTER SETTING THE SESSION for keras! 
-  # Otherwise, their weights will be unavailable in the threads after the session there has been set
-  set_session(sess)
-
-  MNIST_model_h5_file_path = os.path.join("model", "MNIST_model_trained.hdf5")
-  model = load_model(MNIST_model_h5_file_path, compile=False)  
-  return model, graph  
-
-
-# def load_predictor():
-#   global predictor
-  
-#   MNIST_model_json_file_path = os.path.join("model", "MNIST_model.json")
-#   MNIST_model_h5_file_path = os.path.join("model", "MNIST_model.h5")
-  
-#   predictor = ktrain.load_predictor(MNIST_model_h5_file_path)
-  
-#   if hasattr(predictor.model, '_make_predict_function'):
-#     predictor.model._make_predict_function()
-    
-#   global graph
-#   graph = tf.compat.v1.get_default_graph()
-
-#   return predictor, graph
